@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Minilibrary.Data;
+using Minilibrary.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Data
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 // Add services to the container.
 
