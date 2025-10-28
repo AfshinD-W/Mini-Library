@@ -1,0 +1,25 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# Logs and user-specific files
+*.log
+*.user
+*.suo
+
+# Backup files
+*.tmp
+*.bak
+
+# Publish outputs
+publish/
+
+# Rider / VSCode settings
+.idea/
+.vscode/
+
+# Ignore test result folders
+TestResults/
